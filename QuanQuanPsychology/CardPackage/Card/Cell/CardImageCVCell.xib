@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardImageCVCell" id="heS-dK-qjr" customClass="CardImageCVCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="559"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="559"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2r-mW-0AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="559"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star5" translatesAutoresizingMaskIntoConstraints="NO" id="uww-IO-RLe">
+                                <rect key="frame" x="90" y="84" width="140" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="RAd-Tc-GGq"/>
+                                    <constraint firstAttribute="height" constant="20" id="nW6-1U-bup"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="考试首页背景" translatesAutoresizingMaskIntoConstraints="NO" id="Nq0-SV-OMK">
+                                <rect key="frame" x="10" y="249.5" width="300" height="224.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nq0-SV-OMK" secondAttribute="height" multiplier="4:3" id="N1p-a9-dqj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukj-sW-nTh">
+                                <rect key="frame" x="24" y="114" width="272" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="28" id="8bV-nZ-vQq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="已完成" translatesAutoresizingMaskIntoConstraints="NO" id="bpd-Gv-GQS">
+                                <rect key="frame" x="257" y="16" width="47" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="7eo-wj-Vfy"/>
+                                    <constraint firstAttribute="height" constant="37" id="ij7-36-QnH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Nq0-SV-OMK" secondAttribute="bottom" constant="85" id="3N9-Cm-oq0"/>
+                            <constraint firstItem="Nq0-SV-OMK" firstAttribute="width" secondItem="A2r-mW-0AN" secondAttribute="width" multiplier="0.9375" id="FFV-hX-dUe"/>
+                            <constraint firstItem="Ukj-sW-nTh" firstAttribute="leading" secondItem="A2r-mW-0AN" secondAttribute="leading" constant="24" id="FyC-45-Dyi"/>
+                            <constraint firstItem="Ukj-sW-nTh" firstAttribute="top" secondItem="uww-IO-RLe" secondAttribute="bottom" constant="10" id="GTV-Yc-0FS"/>
+                            <constraint firstItem="uww-IO-RLe" firstAttribute="centerX" secondItem="A2r-mW-0AN" secondAttribute="centerX" id="PXA-kZ-6u0"/>
+                            <constraint firstItem="bpd-Gv-GQS" firstAttribute="top" secondItem="A2r-mW-0AN" secondAttribute="top" constant="16" id="fwg-zW-qge"/>
+                            <constraint firstAttribute="trailing" secondItem="bpd-Gv-GQS" secondAttribute="trailing" constant="16" id="gzb-5x-sJ4"/>
+                            <constraint firstItem="uww-IO-RLe" firstAttribute="top" secondItem="A2r-mW-0AN" secondAttribute="top" constant="84" id="oaL-AB-T0a"/>
+                            <constraint firstItem="Nq0-SV-OMK" firstAttribute="centerX" secondItem="A2r-mW-0AN" secondAttribute="centerX" id="qjl-cG-RyO"/>
+                            <constraint firstAttribute="trailing" secondItem="Ukj-sW-nTh" secondAttribute="trailing" constant="24" id="xcI-7N-RYt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="A2r-mW-0AN" firstAttribute="leading" secondItem="heS-dK-qjr" secondAttribute="leading" id="Iow-AR-sv7"/>
+                <constraint firstAttribute="trailing" secondItem="A2r-mW-0AN" secondAttribute="trailing" id="Lbc-RM-EXp"/>
+                <constraint firstItem="A2r-mW-0AN" firstAttribute="top" secondItem="heS-dK-qjr" secondAttribute="top" id="Mcz-HX-8AK"/>
+                <constraint firstAttribute="bottom" secondItem="A2r-mW-0AN" secondAttribute="bottom" id="zte-X3-PGj"/>
+            </constraints>
+            <connections>
+                <outlet property="basicCardView" destination="A2r-mW-0AN" id="oTW-dA-cv5"/>
+                <outlet property="cardBackgroundImage" destination="Nq0-SV-OMK" id="KB2-iy-kSV"/>
+                <outlet property="cardName" destination="Ukj-sW-nTh" id="ZJW-ak-p8c"/>
+                <outlet property="cardStar" destination="uww-IO-RLe" id="lbE-fv-cRx"/>
+                <outlet property="finishIcon" destination="bpd-Gv-GQS" id="NwG-ao-sDf"/>
+                <outlet property="starTop" destination="oaL-AB-T0a" id="RTy-HD-YT3"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star5" width="140" height="20"/>
+        <image name="已完成" width="47" height="37"/>
+        <image name="考试首页背景" width="375" height="140"/>
+    </resources>
+</document>

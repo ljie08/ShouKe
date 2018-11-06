@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardOverviewCVCell" id="cS5-1a-0eA" customClass="CardOverviewCVCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmF-3O-lf2">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEe-yn-iGx">
+                                <rect key="frame" x="10" y="58" width="80" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="17" id="9LE-EH-fK0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="宇宙背景图" translatesAutoresizingMaskIntoConstraints="NO" id="SRY-30-Zx0">
+                                <rect key="frame" x="10" y="8" width="80" height="114.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SRY-30-Zx0" secondAttribute="height" multiplier="40:57" id="gmE-UX-fm1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TEe-yn-iGx" firstAttribute="centerY" secondItem="HmF-3O-lf2" secondAttribute="centerY" id="CGH-Pb-S89"/>
+                            <constraint firstItem="TEe-yn-iGx" firstAttribute="leading" secondItem="HmF-3O-lf2" secondAttribute="leading" constant="10" id="Dyb-iH-pN8"/>
+                            <constraint firstItem="SRY-30-Zx0" firstAttribute="centerX" secondItem="HmF-3O-lf2" secondAttribute="centerX" id="FSY-nk-46u"/>
+                            <constraint firstItem="SRY-30-Zx0" firstAttribute="centerY" secondItem="HmF-3O-lf2" secondAttribute="centerY" id="UkB-O1-RcN"/>
+                            <constraint firstItem="SRY-30-Zx0" firstAttribute="width" secondItem="HmF-3O-lf2" secondAttribute="width" multiplier="0.8" id="dCc-Cc-OkJ"/>
+                            <constraint firstAttribute="trailing" secondItem="TEe-yn-iGx" secondAttribute="trailing" constant="10" id="nat-cw-kjY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HmF-3O-lf2" secondAttribute="trailing" id="H8l-cs-LkS"/>
+                <constraint firstAttribute="bottom" secondItem="HmF-3O-lf2" secondAttribute="bottom" id="acf-s5-gv6"/>
+                <constraint firstItem="HmF-3O-lf2" firstAttribute="top" secondItem="cS5-1a-0eA" secondAttribute="top" id="xtS-u9-vPD"/>
+                <constraint firstItem="HmF-3O-lf2" firstAttribute="leading" secondItem="cS5-1a-0eA" secondAttribute="leading" id="ySB-Cf-1Tq"/>
+            </constraints>
+            <connections>
+                <outlet property="basicView" destination="HmF-3O-lf2" id="xsg-ri-YEP"/>
+                <outlet property="cardImage" destination="SRY-30-Zx0" id="CCq-cW-C6i"/>
+                <outlet property="cardName" destination="TEe-yn-iGx" id="gtr-WY-ZT5"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="宇宙背景图" width="247" height="353"/>
+    </resources>
+</document>

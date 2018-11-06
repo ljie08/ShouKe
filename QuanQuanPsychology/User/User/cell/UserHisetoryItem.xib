@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserHisetoryItem" id="gTV-IL-0wX" customClass="UserHisetoryItem">
+            <rect key="frame" x="0.0" y="0.0" width="205" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="205" height="115"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lyn-7q-rwM">
+                        <rect key="frame" x="15" y="0.0" width="180" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Lyn-7q-rwM" secondAttribute="height" multiplier="9:4" id="kUL-YJ-A5Y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="国际心理咨询师第二模块（知觉）国际心理咨询师第二模块（知觉）国际心理咨询师第二模块（知觉）" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jE-WN-w73">
+                        <rect key="frame" x="15" y="82" width="180" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.2196078431372549" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Lyn-7q-rwM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="6kM-R6-YQc"/>
+                <constraint firstItem="2jE-WN-w73" firstAttribute="leading" secondItem="Lyn-7q-rwM" secondAttribute="leading" id="SAQ-VF-a4n"/>
+                <constraint firstAttribute="bottom" secondItem="2jE-WN-w73" secondAttribute="bottom" id="W2J-Gv-ecg"/>
+                <constraint firstItem="2jE-WN-w73" firstAttribute="trailing" secondItem="Lyn-7q-rwM" secondAttribute="trailing" id="iJn-fL-XLQ"/>
+                <constraint firstAttribute="trailing" secondItem="Lyn-7q-rwM" secondAttribute="trailing" constant="10" id="lWh-aa-1YB"/>
+                <constraint firstItem="Lyn-7q-rwM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nJ6-e8-zM7"/>
+                <constraint firstItem="2jE-WN-w73" firstAttribute="top" secondItem="Lyn-7q-rwM" secondAttribute="bottom" constant="2" id="xb6-Yu-MZR"/>
+            </constraints>
+            <size key="customSize" width="205" height="116"/>
+            <connections>
+                <outlet property="titleLab" destination="2jE-WN-w73" id="MOZ-SV-SFb"/>
+                <outlet property="videoView" destination="Lyn-7q-rwM" id="Ql8-6E-Eei"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="96"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XLk-z2-gfZ" customClass="ChallengeStartView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZC-zL-CAD">
+                    <rect key="frame" x="43" y="201.5" width="289" height="264"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="challenge_start_bg" translatesAutoresizingMaskIntoConstraints="NO" id="3dp-RC-dzY">
+                            <rect key="frame" x="0.0" y="0.0" width="289" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="3dp-RC-dzY" secondAttribute="height" multiplier="289:70" id="vJG-5B-YRG"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVa-he-Uzf">
+                            <rect key="frame" x="0.0" y="0.0" width="289" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="xVa-he-Uzf" secondAttribute="height" multiplier="289:70" id="odj-36-hoy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" red="0.34901960780000002" green="0.86274509799999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5c1-Ae-Anz">
+                            <rect key="frame" x="0.0" y="71" width="289" height="1"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ZOR-TT-CaN"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-2J-VBh">
+                            <rect key="frame" x="0.0" y="97" width="289" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="QvN-z3-dov"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AbA-Ir-Aie">
+                            <rect key="frame" x="0.0" y="119" width="289" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Tx-C8-bbI" customClass="MainGreenButton">
+                            <rect key="frame" x="84" y="164" width="120" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="cEb-pN-FPX"/>
+                                <constraint firstAttribute="width" constant="120" id="goW-rM-3HE"/>
+                            </constraints>
+                            <state key="normal" title="开始闯关"/>
+                            <connections>
+                                <action selector="start:" destination="XLk-z2-gfZ" eventType="touchUpInside" id="uvB-xU-pbG"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="challenge_tip" translatesAutoresizingMaskIntoConstraints="NO" id="bYg-oq-xcX">
+                            <rect key="frame" x="53" y="222" width="14" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="5R8-in-Hli"/>
+                                <constraint firstAttribute="width" constant="14" id="hKD-7e-Qxf"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正确率达到30%才能过下一关噢" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zp2-2N-7h8">
+                            <rect key="frame" x="78.5" y="219" width="172.5" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="a9I-IV-l0D"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0k0-2J-VBh" secondAttribute="trailing" id="0CX-1S-9wf"/>
+                        <constraint firstItem="zp2-2N-7h8" firstAttribute="centerX" secondItem="RZC-zL-CAD" secondAttribute="centerX" constant="20" id="6Tw-Ui-frf"/>
+                        <constraint firstItem="5c1-Ae-Anz" firstAttribute="top" secondItem="3dp-RC-dzY" secondAttribute="bottom" constant="1" id="7uL-qT-6Iq"/>
+                        <constraint firstAttribute="trailing" secondItem="xVa-he-Uzf" secondAttribute="trailing" id="8fm-Hk-mbV"/>
+                        <constraint firstItem="0k0-2J-VBh" firstAttribute="top" secondItem="5c1-Ae-Anz" secondAttribute="bottom" constant="25" id="Dcr-ss-bxY"/>
+                        <constraint firstItem="0k0-2J-VBh" firstAttribute="leading" secondItem="RZC-zL-CAD" secondAttribute="leading" id="IUB-KE-lCS"/>
+                        <constraint firstAttribute="trailing" secondItem="5c1-Ae-Anz" secondAttribute="trailing" id="MXV-DK-zdi"/>
+                        <constraint firstAttribute="trailing" secondItem="3dp-RC-dzY" secondAttribute="trailing" id="OAP-9m-gaQ"/>
+                        <constraint firstItem="2Tx-C8-bbI" firstAttribute="centerX" secondItem="RZC-zL-CAD" secondAttribute="centerX" id="Oj6-MJ-ehK"/>
+                        <constraint firstItem="2Tx-C8-bbI" firstAttribute="top" secondItem="AbA-Ir-Aie" secondAttribute="bottom" constant="5" id="V5Z-Le-OjH"/>
+                        <constraint firstAttribute="trailing" secondItem="AbA-Ir-Aie" secondAttribute="trailing" id="VeT-hu-xg0"/>
+                        <constraint firstItem="zp2-2N-7h8" firstAttribute="top" secondItem="2Tx-C8-bbI" secondAttribute="bottom" constant="15" id="Ysn-cJ-24W"/>
+                        <constraint firstItem="3dp-RC-dzY" firstAttribute="top" secondItem="RZC-zL-CAD" secondAttribute="top" id="bqW-BV-67W"/>
+                        <constraint firstItem="3dp-RC-dzY" firstAttribute="leading" secondItem="RZC-zL-CAD" secondAttribute="leading" id="d6z-Ej-OTq"/>
+                        <constraint firstItem="AbA-Ir-Aie" firstAttribute="leading" secondItem="RZC-zL-CAD" secondAttribute="leading" id="dQX-vy-6vb"/>
+                        <constraint firstAttribute="height" constant="264" id="qyV-Is-DFO"/>
+                        <constraint firstItem="5c1-Ae-Anz" firstAttribute="leading" secondItem="RZC-zL-CAD" secondAttribute="leading" id="t1o-jw-fRB"/>
+                        <constraint firstItem="zp2-2N-7h8" firstAttribute="leading" secondItem="bYg-oq-xcX" secondAttribute="trailing" constant="11.5" id="tuM-fy-X3j"/>
+                        <constraint firstItem="AbA-Ir-Aie" firstAttribute="top" secondItem="0k0-2J-VBh" secondAttribute="bottom" constant="1" id="udJ-SS-IMT"/>
+                        <constraint firstItem="bYg-oq-xcX" firstAttribute="centerY" secondItem="zp2-2N-7h8" secondAttribute="centerY" id="vTi-PD-CNE"/>
+                        <constraint firstItem="xVa-he-Uzf" firstAttribute="leading" secondItem="RZC-zL-CAD" secondAttribute="leading" id="yxJ-U1-Fkx"/>
+                        <constraint firstItem="xVa-he-Uzf" firstAttribute="top" secondItem="RZC-zL-CAD" secondAttribute="top" id="z0e-vT-p7U"/>
+                        <constraint firstAttribute="bottom" secondItem="zp2-2N-7h8" secondAttribute="bottom" constant="25" id="zHO-hc-MLb"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zi8-WR-mQf">
+                    <rect key="frame" x="167.5" y="477.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="eFA-k7-XJG"/>
+                        <constraint firstAttribute="height" constant="40" id="sfy-9s-XkS"/>
+                    </constraints>
+                    <state key="normal" image="challenge_alert_close"/>
+                    <connections>
+                        <action selector="close:" destination="XLk-z2-gfZ" eventType="touchUpInside" id="x8e-k4-LJ1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5995962668" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RZC-zL-CAD" firstAttribute="centerY" secondItem="XLk-z2-gfZ" secondAttribute="centerY" id="8Ec-bB-q41"/>
+                <constraint firstItem="Zi8-WR-mQf" firstAttribute="centerX" secondItem="XLk-z2-gfZ" secondAttribute="centerX" id="YQw-q8-KIs"/>
+                <constraint firstItem="RZC-zL-CAD" firstAttribute="width" secondItem="XLk-z2-gfZ" secondAttribute="width" multiplier="0.77" id="Yiv-re-cgD"/>
+                <constraint firstItem="Zi8-WR-mQf" firstAttribute="top" secondItem="RZC-zL-CAD" secondAttribute="bottom" constant="12" id="qAj-HM-vHI"/>
+                <constraint firstItem="RZC-zL-CAD" firstAttribute="centerX" secondItem="XLk-z2-gfZ" secondAttribute="centerX" id="tcF-sR-SiQ"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundImage" destination="3dp-RC-dzY" id="95A-D9-qQa"/>
+                <outlet property="basicView" destination="RZC-zL-CAD" id="JfF-Gf-HMN"/>
+                <outlet property="dynamicView" destination="AbA-Ir-Aie" id="dtU-il-5fK"/>
+                <outlet property="intro" destination="0k0-2J-VBh" id="rXT-lh-C0w"/>
+                <outlet property="level" destination="xVa-he-Uzf" id="PHe-VT-Zyv"/>
+                <outlet property="line" destination="5c1-Ae-Anz" id="mMY-EB-b3T"/>
+                <outlet property="startBtn" destination="2Tx-C8-bbI" id="nrc-ph-lYE"/>
+                <outlet property="tip" destination="zp2-2N-7h8" id="Cji-2g-gZi"/>
+                <outlet property="tipIcon" destination="bYg-oq-xcX" id="MAj-Iy-SDE"/>
+            </connections>
+            <point key="canvasLocation" x="3448.5" y="-153.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="challenge_alert_close" width="40" height="40"/>
+        <image name="challenge_start_bg" width="272" height="54"/>
+        <image name="challenge_tip" width="14" height="13"/>
+    </resources>
+</document>

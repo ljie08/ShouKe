@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="L3C-OR-9Ei" customClass="ActivationCodeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="732-7r-6G4">
+                    <rect key="frame" x="43" y="224" width="289" height="219"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eso-FM-u6Y" customClass="MainGreenButton">
+                            <rect key="frame" x="149.5" y="135.5" width="118.5" height="39.5"/>
+                            <color key="backgroundColor" red="0.38431372549999998" green="0.81176470590000005" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="price">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="pay:" destination="L3C-OR-9Ei" eventType="touchUpInside" id="ZgH-WO-oPL"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_trial_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Nzd-BR-u30">
+                            <rect key="frame" x="0.0" y="0.0" width="289" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Nzd-BR-u30" secondAttribute="height" multiplier="289:60" id="fQG-O4-1ZB"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="试看结束" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVK-EB-3jT">
+                            <rect key="frame" x="0.0" y="60" width="289" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="zbQ-D5-7Rr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <color key="textColor" red="0.38431372549999998" green="0.81176470590000005" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXD-0i-GGz">
+                            <rect key="frame" x="21" y="135.5" width="118.5" height="39.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ZXD-0i-GGz" secondAttribute="height" multiplier="119:40" id="bf0-vI-fRU"/>
+                            </constraints>
+                            <state key="normal" title="返回">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="back:" destination="L3C-OR-9Ei" eventType="touchUpInside" id="cyo-Wu-FI2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SVK-EB-3jT" firstAttribute="leading" secondItem="732-7r-6G4" secondAttribute="leading" id="2ve-85-hb0"/>
+                        <constraint firstItem="ZXD-0i-GGz" firstAttribute="width" secondItem="732-7r-6G4" secondAttribute="width" multiplier="0.41" id="5iK-og-Evb"/>
+                        <constraint firstItem="SVK-EB-3jT" firstAttribute="top" secondItem="Nzd-BR-u30" secondAttribute="bottom" id="KOC-Mo-lNA"/>
+                        <constraint firstAttribute="width" secondItem="732-7r-6G4" secondAttribute="height" multiplier="289:219" id="VFx-5U-FQI"/>
+                        <constraint firstItem="eso-FM-u6Y" firstAttribute="height" secondItem="ZXD-0i-GGz" secondAttribute="height" id="aGQ-Fe-y3L"/>
+                        <constraint firstAttribute="trailing" secondItem="Nzd-BR-u30" secondAttribute="trailing" id="bsH-Tg-t1S"/>
+                        <constraint firstAttribute="centerX" secondItem="ZXD-0i-GGz" secondAttribute="trailing" constant="5" id="dgy-jU-XzA"/>
+                        <constraint firstItem="Nzd-BR-u30" firstAttribute="leading" secondItem="732-7r-6G4" secondAttribute="leading" id="ds8-qx-cEm"/>
+                        <constraint firstItem="eso-FM-u6Y" firstAttribute="leading" secondItem="732-7r-6G4" secondAttribute="centerX" constant="5" id="gK7-5a-hxq"/>
+                        <constraint firstItem="eso-FM-u6Y" firstAttribute="width" secondItem="ZXD-0i-GGz" secondAttribute="width" id="pbl-4N-i6p"/>
+                        <constraint firstAttribute="trailing" secondItem="SVK-EB-3jT" secondAttribute="trailing" id="wTx-K4-omD"/>
+                        <constraint firstItem="eso-FM-u6Y" firstAttribute="bottom" secondItem="ZXD-0i-GGz" secondAttribute="bottom" id="z6v-nV-jKs"/>
+                        <constraint firstAttribute="bottom" secondItem="ZXD-0i-GGz" secondAttribute="bottom" multiplier="1.25" id="zKl-aT-K6Z"/>
+                        <constraint firstItem="Nzd-BR-u30" firstAttribute="top" secondItem="732-7r-6G4" secondAttribute="top" id="zai-5a-A5i"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.4010853607" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="732-7r-6G4" firstAttribute="centerY" secondItem="L3C-OR-9Ei" secondAttribute="centerY" id="FNk-xs-1cj"/>
+                <constraint firstItem="732-7r-6G4" firstAttribute="width" secondItem="L3C-OR-9Ei" secondAttribute="width" multiplier="0.77" id="Onz-pz-Ow1"/>
+                <constraint firstItem="732-7r-6G4" firstAttribute="centerX" secondItem="L3C-OR-9Ei" secondAttribute="centerX" id="evJ-uL-Mj8"/>
+            </constraints>
+            <connections>
+                <outlet property="backBtn" destination="ZXD-0i-GGz" id="ttC-l0-lZc"/>
+                <outlet property="basicView" destination="732-7r-6G4" id="Tsk-Hp-DT0"/>
+                <outlet property="priceBtn" destination="eso-FM-u6Y" id="mEo-Jq-3uz"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="111.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="card_trial_bg" width="272" height="54"/>
+    </resources>
+</document>

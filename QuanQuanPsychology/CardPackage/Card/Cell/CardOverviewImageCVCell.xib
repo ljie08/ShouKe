@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardOverviewImageCVCell" id="bj8-i1-FAJ" customClass="CardOverviewImageCVCell">
+            <rect key="frame" x="0.0" y="0.0" width="109" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="109" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nd4-Wk-Ldg">
+                        <rect key="frame" x="0.0" y="0.0" width="109" height="140"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6N-vJ-W9o">
+                                <rect key="frame" x="10" y="10" width="89" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="20" id="SRE-4U-OYc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="考试首页背景" translatesAutoresizingMaskIntoConstraints="NO" id="aor-9F-UJX">
+                                <rect key="frame" x="4" y="44" width="101" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aor-9F-UJX" secondAttribute="height" multiplier="101:84" id="fJy-5D-hdl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K6N-vJ-W9o" firstAttribute="top" secondItem="nd4-Wk-Ldg" secondAttribute="top" constant="10" id="ACf-tk-6DV"/>
+                            <constraint firstAttribute="trailing" secondItem="K6N-vJ-W9o" secondAttribute="trailing" constant="10" id="AIj-Fz-PF5"/>
+                            <constraint firstAttribute="bottom" secondItem="aor-9F-UJX" secondAttribute="bottom" constant="12" id="GPJ-A6-fEx"/>
+                            <constraint firstAttribute="trailing" secondItem="aor-9F-UJX" secondAttribute="trailing" constant="4" id="I6p-NU-g1S"/>
+                            <constraint firstItem="aor-9F-UJX" firstAttribute="centerX" secondItem="nd4-Wk-Ldg" secondAttribute="centerX" id="NWK-NB-4HS"/>
+                            <constraint firstItem="K6N-vJ-W9o" firstAttribute="leading" secondItem="nd4-Wk-Ldg" secondAttribute="leading" constant="10" id="Vid-jV-Rpe"/>
+                            <constraint firstItem="aor-9F-UJX" firstAttribute="leading" secondItem="nd4-Wk-Ldg" secondAttribute="leading" constant="4" id="fnJ-P3-nUZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="nd4-Wk-Ldg" firstAttribute="leading" secondItem="bj8-i1-FAJ" secondAttribute="leading" id="1oX-xo-PQe"/>
+                <constraint firstItem="nd4-Wk-Ldg" firstAttribute="top" secondItem="bj8-i1-FAJ" secondAttribute="top" id="5OW-zz-K3f"/>
+                <constraint firstAttribute="trailing" secondItem="nd4-Wk-Ldg" secondAttribute="trailing" id="H0S-tH-U9X"/>
+                <constraint firstAttribute="bottom" secondItem="nd4-Wk-Ldg" secondAttribute="bottom" id="SPA-1O-6md"/>
+            </constraints>
+            <connections>
+                <outlet property="basicView" destination="nd4-Wk-Ldg" id="w8t-ci-HKG"/>
+                <outlet property="cardImage" destination="aor-9F-UJX" id="FFz-0X-WGG"/>
+                <outlet property="cardName" destination="K6N-vJ-W9o" id="hk4-q5-A9G"/>
+                <outlet property="imageBottom" destination="GPJ-A6-fEx" id="dBO-gJ-n29"/>
+                <outlet property="labelTop" destination="ACf-tk-6DV" id="MFj-RP-GLK"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="考试首页背景" width="375" height="140"/>
+    </resources>
+</document>

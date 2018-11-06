@@ -1,0 +1,6 @@
+framework module Pods_QuanQuanPsychology {
+  umbrella header "Pods-QuanQuanPsychology-umbrella.h"
+
+  export *
+  module * { export * }
+}

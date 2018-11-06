@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController storyboardIdentifier="LaunchScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fcj-gW-QHD"/>
+                        <viewControllerLayoutGuide type="bottom" id="pyY-MC-Ziy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_newbg" translatesAutoresizingMaskIntoConstraints="NO" id="oCn-JS-E9v">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="557"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oCn-JS-E9v" secondAttribute="height" multiplier="375:557" id="DN4-pY-Led"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BZ-MN-tn4">
+                                <rect key="frame" x="0.0" y="557" width="374.5" height="110"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C38-uc-hqC">
+                                        <rect key="frame" x="117" y="34" width="140" height="42"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_logo" translatesAutoresizingMaskIntoConstraints="NO" id="OKc-D7-aNc">
+                                                <rect key="frame" x="0.5" y="0.0" width="42" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="OKc-D7-aNc" secondAttribute="height" multiplier="1:1" id="pon-2E-0fT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="兽课心理" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHa-bQ-eHr">
+                                                <rect key="frame" x="42.5" y="0.0" width="98" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <color key="textColor" red="0.32156862745098036" green="0.32156862745098036" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="做专业的心理交易" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v22-N4-ele">
+                                                <rect key="frame" x="42.5" y="28" width="98" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="aqF-rd-D0o"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="v22-N4-ele" secondAttribute="trailing" id="3LJ-hQ-ZXw"/>
+                                            <constraint firstItem="FHa-bQ-eHr" firstAttribute="top" secondItem="C38-uc-hqC" secondAttribute="top" id="BAX-Q2-sjY"/>
+                                            <constraint firstAttribute="width" constant="140" id="K0U-EQ-E1b"/>
+                                            <constraint firstItem="v22-N4-ele" firstAttribute="leading" secondItem="OKc-D7-aNc" secondAttribute="trailing" id="QV5-ug-Zid"/>
+                                            <constraint firstAttribute="trailing" secondItem="FHa-bQ-eHr" secondAttribute="trailing" id="gSD-J3-jNV"/>
+                                            <constraint firstAttribute="bottom" secondItem="OKc-D7-aNc" secondAttribute="bottom" id="ijF-un-pkt"/>
+                                            <constraint firstAttribute="height" constant="42" id="lgf-x0-bXP"/>
+                                            <constraint firstAttribute="bottom" secondItem="v22-N4-ele" secondAttribute="bottom" constant="2" id="o0I-X5-PfR"/>
+                                            <constraint firstItem="FHa-bQ-eHr" firstAttribute="leading" secondItem="OKc-D7-aNc" secondAttribute="trailing" id="qKP-gh-H83"/>
+                                            <constraint firstItem="OKc-D7-aNc" firstAttribute="top" secondItem="C38-uc-hqC" secondAttribute="top" id="twK-zH-8Y4"/>
+                                            <constraint firstItem="OKc-D7-aNc" firstAttribute="leading" secondItem="C38-uc-hqC" secondAttribute="leading" id="zBt-bO-HoQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="C38-uc-hqC" firstAttribute="centerY" secondItem="0BZ-MN-tn4" secondAttribute="centerY" id="HVM-MJ-GsP"/>
+                                    <constraint firstAttribute="width" secondItem="0BZ-MN-tn4" secondAttribute="height" multiplier="75:22" id="gSh-ra-TR3"/>
+                                    <constraint firstItem="C38-uc-hqC" firstAttribute="centerX" secondItem="0BZ-MN-tn4" secondAttribute="centerX" id="qRi-Ea-CVs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0BZ-MN-tn4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5Oq-4T-h4n"/>
+                            <constraint firstItem="0BZ-MN-tn4" firstAttribute="top" secondItem="oCn-JS-E9v" secondAttribute="bottom" id="FDd-00-gCu"/>
+                            <constraint firstAttribute="trailing" secondItem="oCn-JS-E9v" secondAttribute="trailing" id="HJj-Hj-5z1"/>
+                            <constraint firstItem="oCn-JS-E9v" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Qsr-dP-fY8"/>
+                            <constraint firstAttribute="trailing" secondItem="0BZ-MN-tn4" secondAttribute="trailing" id="giP-ui-rwZ"/>
+                            <constraint firstItem="oCn-JS-E9v" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="sLo-pf-4H1"/>
+                            <constraint firstItem="pyY-MC-Ziy" firstAttribute="top" secondItem="0BZ-MN-tn4" secondAttribute="bottom" id="vRw-Pc-a7h"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch_logo" width="43" height="43"/>
+        <image name="launch_newbg" width="375" height="556"/>
+    </resources>
+</document>
